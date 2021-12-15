@@ -13,7 +13,6 @@ import javax.security.auth.login.LoginException;
 
 public class Main {
     private static JDA jda;
-    private static Guild pabloDiscord;
 
     public static void main(String[] args) throws LoginException {
         System.getenv().forEach((key, value) -> System.out.println(key + " : " + value));
@@ -43,13 +42,5 @@ public class Main {
 
     public static JDA getJda() {
         return jda;
-    }
-
-    public static Guild getPabloDiscord() {
-        return pabloDiscord;
-    }
-
-    public static void setPabloDiscord(Guild pabloDiscord) {
-        Main.pabloDiscord = pabloDiscord;
     }
 }
